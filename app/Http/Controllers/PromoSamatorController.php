@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Redirect;
 use App\Models\Lead;
 
-class Promo99KController extends Controller
+class PromoSamatorController extends Controller
 {
     //
     public function index()
@@ -28,7 +28,7 @@ class Promo99KController extends Controller
             $club = DB::table('ua_mst_clubs')->whereRaw('org_id = 13')->whereRaw('deletedAt is null and is_deleted = 0')->get();
         }
 
-        return view('99k.index', compact('club', 'withClub'));
+        return view('samator.index', compact('club', 'withClub'));
     }
 
     public function store(Request $request)
@@ -132,7 +132,7 @@ class Promo99KController extends Controller
             };*/
         }
 
-        return view('99k.checkout', compact('packageMembership', 'leadsId', 'data', 'salesList'));
+        return view('samator.checkout', compact('packageMembership', 'leadsId', 'data', 'salesList'));
     }
 
     private function getUrl($key = NULL)
@@ -179,7 +179,7 @@ class Promo99KController extends Controller
 
             if ($response->successful()) {
                 $url = $data['xendit_invoice_url'];
-                return view('99k.order', compact('url'));
+                return view('samator.order', compact('url'));
             } elseif ($response->failed()) {
             }
         }
