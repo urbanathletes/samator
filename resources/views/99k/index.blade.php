@@ -18,14 +18,27 @@
 
     .desc-promo {
         color: #ffffff;
-        font-size: 20px;
+        font-size: 25px;
         text-align: justify;
         margin-bottom: 0px;
-        font-weight: 400;
+    }
+
+    .jul-one {
+        font-size: 40px;
+        font-weight: 800;
     }
 
     .spacer {
-        margin-bottom: 180px;
+        margin-bottom: 150px;
+    }
+
+    .spacer-p0{
+        margin-bottom: 40px;
+    }
+
+    .ig {
+        width: 279px;
+        height: 37px;
     }
 
     @media only screen and (max-device-width: 640px) {
@@ -34,38 +47,56 @@
         }
 
         .desc-promo {
+            font-weight: 700;
             font-size: 14px;
+
         }
+
+        .jul-one {
+            font-size: 30px;
+        }
+
+        .spacer {
+            margin-bottom: 50px;
+        }
+
+        .ig {
+        width: 200px;
+        height: 25px;
+    }
+        .spacer-p0{
+            margin-bottom: 0;
+        }
+
     }
 </style>
 
 <div class="main">
 
     <section class="signup">
-        <!-- <img src="images/signup-bg.jpg" alt=""> -->
-        <div class="container">
+        <div class="container-sm">
             <div class="row">
                 <div class="col-sm-7">
-                    <!-- <img src="assets/img/logo-FW-samator-presale.png" alt="" class="img-logo" style="margin-bottom: 20px"; width="653px" height="69px"> -->
-                    <img src="assets/img/logo-FW-samator-presale.png" alt="" class="img-logo" style="margin-bottom: 20px; width: 653px; height: 69px;">
-                    <!-- <img src="assets/img/99k5.png" alt="" style="margin-top:-40px;"> -->
-                    <!-- <div style="background-color:#190f41; border-radius: 10px; padding: 15px; margin-bottom:20px;"> -->
-                    <p>
-                        <span style="color: #FECC09; font-size: 50px; font-style: italic; font: Poppins;">
+                    <img src="assets/img/logo-FW-samator-presale.png" alt="" class="img-logo" style="margin-bottom: 20px; width: 653px; height: 69px; object-fit: contain; filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.5));">
+                    <br>
+                    <div class="spacer-p0"></div>
+                    <p class="jul-one" style="line-height: 1.2; font-style: italic; ">
+                        <span style="color: #FECC09;font: Poppins; font-weight:bold">
                             RASAKAN PENGALAMAN <br> NGEGYM MEWAH <br>
                             DENGAN HARGA YANG RAMAH <br>
                         </span>
                     </p>
-                    <p class="desc-promo" style="font-size: 25px; font-style: Poppins;">
+                    <br>
+                    <div class="spacer-p0"></div>
+                    <p class="desc-promo" style="font-style: Poppins; font-weight: 700;">
                         FITNESSWORKS adalah GYM pertama yang menerapkan Time Based Membership dari Urban Athletes Management, yang keuntungannya anda yang hanya ngegym 1x seminggu tidak perlu membayar seperti yang ngegym 5x seminggu. Hanya selama
-                        <class="form-title" style="text-align: left; font-size: 25px; color: #FECC09; font-style: poppins;">
+                        <class="form-title" style="text-align: left; font-weight: 700;color: #FECC09; font-style: poppins;">
                             Periode Presale Gabung Member mulai Rp 198K + Free 2 Bulan Membership
                     </p>
-                    <!-- </div> -->
                     <div class="spacer"></div>
-                    <div style="position: relative; width: 279px; height: 37px;">
+                    <div class="ig" style="position: relative;">
                         <a href="https://www.instagram.com/fitnessworks.id/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D">
-                            <img src="assets/img/icon-IG-LP.png" alt="" style="position: absolute; bottom: 0; right: 0; width: 100%; height: 100%; margin-bottom: 20px;">
+                            <img src="assets/img/icon-IG-LP.png" alt="" style="position: absolute; bottom: 0; right: 0; width: 100%; height: 100%; margin-bottom: 20px; object-fit: contain;">
                     </div>
                     </a>
                 </div>
@@ -104,7 +135,7 @@
 
                         <form method="POST" id="signup-form" class="signup-form">
                             {{ csrf_field() }}
-                            <h2 class="form-title" style="text-align: left; font-size: 28px;">Hanya selama Periode Presale<br>Gabung Member mulai Rp 198K + <br>Free 2 Bulan Membership
+                            <h2 class="form-title" style="text-align: left; font-size: 25px; max-width: 100%; word-wrap: break-word;">Hanya selama Periode Presale<br>Gabung Member mulai Rp 198K + <br>Free 2 Bulan Membership
                             </h2>
                             <div class="form-group">
                                 <label for="full_name" class="normal" style="font-weight: 600;margin-left: 5px;">Nama
@@ -173,8 +204,8 @@
                             <br>
                             <div class="form-group">
                                 <input type="button" name="benefit" id="benefit" class="button-benefit" value="Member Benefit" />
-                                <input type="button" name="submit-tnc" id="submit" class="form-submit" value="Daftar Pre-sale" />
-                                <input type="submit" name="submit" id="real-submit" class="form-submit" style="display:none;" />
+                                <input type="submit" name="submit" id="real-submit" class="form-submit" value="Daftar Pre-sale" />
+                                <!-- <input type="submit" name="submit" id="real-submit" class="form-submit" style="display:none;" /> -->
                             </div>
                         </form>
                     </div>

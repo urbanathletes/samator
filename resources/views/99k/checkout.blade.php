@@ -1,7 +1,7 @@
 @extends('master2')
 
 @section('content')
-<div class="container-fluid p0">
+<div class="container-md p0">
     <div class="signup-content h100vh">
         <div class="signup-desc">
             <div class="signup-desc-content" style="padding-left: 30px;padding-right: 30px;text-align:center;">
@@ -60,7 +60,24 @@
                                 <input class="agree-term" type="checkbox" name="checkbox" id="terms_1" />
                                 <label for="terms_1" class="label-agree-term"><span><span></span></span>
                                     Dengan mencentang kotak di sebelah kiri saya menyatakan menyetujui dan paham dari isi syarat dan ketentuan yang berlaku di Fitnessworks
-                                    <a href="{{ URL::asset('assets/docs/Syarat & Ketentuan Fitnessworks.pdf'); }}" target="_blank" class="terms-syarat">Lihat Syarat & Ketentuan</a>
+                                    <!-- <a href="{{ URL::asset('assets/docs/T&C presale FW samator.pdf'); }}" target="_blank" class="terms-syarat">Lihat Syarat & Ketentuan</a> -->
+                                    <a href="{{ URL::asset('assets/docs/Waifer presale FW samator.pdf') }}" onclick="openPdfPopup(event)" class="terms-tuntutan">Lihat Surat Penyerahan Tuntutan</a>
+                                    <script>
+                                        function openPdfPopup(event) {
+                                            event.preventDefault();
+
+                                            var url = event.target.href;
+                                            var windowName = 'pdfPopup'; // Nama jendela pop-up
+
+                                            // Atur ukuran dan posisi jendela pop-up (opsional)
+                                            var windowFeatures = 'width=800,height=600,scrollbars=yes';
+
+                                            // Buka jendela pop-up
+                                            window.open(url, windowName, windowFeatures);
+
+                                            return false;
+                                        }
+                                    </script>
                                 </label>
                             </div>
 
@@ -68,7 +85,7 @@
                                 <input class="agree-term" type="checkbox" name="checkbox" id="terms_2" />
                                 <label for="terms_2" class="label-agree-term"><span><span></span></span>
                                     Dengan mencentang kotak di sebelah kiri saya menyatakan menyetujui dan paham dari isi surat penyerahan tuntutan
-                                    <a href="{{ URL::asset('assets/docs/Surat Penyerahan Tuntutan Fitnessworks.pdf'); }}" target="_blank" class="terms-tuntutan">Lihat Surat Penyerahan Tuntutan</a>
+                                    <a href="{{ URL::asset('assets/docs/Waifer presale FW samator.pdf'); }}" target="_blank" class="terms-tuntutan">Lihat Surat Penyerahan Tuntutan</a>
                                 </label>
                             </div>
 
@@ -83,7 +100,6 @@
                     </div>
 
                     <button type="submit" class="btn btn-primary" style="float:right;" id="orderButton">Pembayaran</button>
-
                 </div>
             </form>
 

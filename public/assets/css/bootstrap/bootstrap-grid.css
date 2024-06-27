@@ -180,7 +180,23 @@
 .container-xxl,
 .container-xl,
 .container-lg,
-.container-md,
+.container-md {
+  max-width: 1200px; /* sesuaikan dengan lebar maksimum yang diinginkan */
+  margin: 0 auto; /* untuk membuat container berada di tengah */
+  padding: 0 20px; /* atau sesuaikan dengan padding yang diinginkan */
+}
+
+@media (max-width: 992px) {
+  .container-md {
+      max-width: 960px; /* contoh penyesuaian untuk layar menengah */
+  }
+}
+
+@media (max-width: 768px) {
+  .container-md {
+      max-width: 720px; /* contoh penyesuaian untuk layar kecil */
+  }
+}
 .container-sm {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;

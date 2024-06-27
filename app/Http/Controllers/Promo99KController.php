@@ -53,25 +53,11 @@ class Promo99KController extends Controller
         if (isset($_GET['type'])) {
             $validateData['type_promo'] = $_GET['type'];
         } else {
-            $validateData['type_promo'] = '99k';
+            $validateData['type_promo'] = 'samator';
         }
         $validateData['sales_id'] = '232';
         $validateData['createdAt'] = date('Y-m-d H:i:s');
         $validateData['updatedAt'] = date('Y-m-d H:i:s');
-
-        // if ($validateData['club_id'] == 4 || $validateData['club_id'] == 5) { //citraland
-        //     $packageMembershipId = 789;
-        // } elseif ($validateData['club_id'] == 6) { //sda
-        //     $packageMembershipId = 790;
-        // } elseif ($validateData['club_id'] == 7) { //gresik
-        //     $packageMembershipId = 791;
-        // } elseif ($validateData['club_id'] == 8) { //mer
-        //     $packageMembershipId = 792;
-        // } elseif ($validateData['club_id'] == 11) { //tidar
-        //     $packageMembershipId = 943;
-        // } elseif ($validateData['club_id'] == 12) { //tidar
-        //     $packageMembershipId = 944;
-        // }
 
         if ($validateData['club_id'] == 17) { //Samator
             $packageMembershipId = 856;
@@ -96,16 +82,16 @@ class Promo99KController extends Controller
                 ->whereRaw('package_membership_id is not null')
                 ->first();
             if (isset($foundMemberPackage)) {
-                return back()->with('error', 'Maaf anda tidak memenuhi syarat & ketentuan untuk membeli promo 99k.');
+                return back()->with('error', 'Maaf anda tidak memenuhi syarat & ketentuan untuk membeli promo samator.');
             }
 
             $foundTransaction = DB::table('ua_orders')
                 ->whereRaw('member_id = ' . $foundMember->id)
-                ->whereRaw('package_membership_id in (789,790,791,792)')
+                ->whereRaw('package_membership_id in (856)')
                 ->whereRaw('status = "paid"')
                 ->first();
             if (isset($foundTransaction)) {
-                return back()->with('error', 'Maaf anda sudah pernah membeli promo 99k.');
+                return back()->with('error', 'Maaf anda sudah pernah membeli promo samator.');
             }
         }
 
