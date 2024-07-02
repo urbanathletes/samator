@@ -91,7 +91,7 @@
                     <p class="desc-promo" style="font-style: Poppins; font-weight: 700;">
                         FITNESSWORKS adalah GYM pertama yang menerapkan Time Based Membership dari Urban Athletes Management, yang keuntungannya anda yang hanya ngegym 1x seminggu tidak perlu membayar seperti yang ngegym 5x seminggu. Hanya selama
                         <class="form-title" style="text-align: left; font-weight: 700;color: #FECC09; font-style: poppins;">
-                            Periode Presale Gabung Member mulai Rp 198K + Free 2 Bulan Membership
+                        Periode Presale Gabung Member mulai Rp 225,500  All Access Fitnessworks & Unlimited.
                     </p>
                     <div class="spacer"></div>
                     <div class="ig" style="position: relative;">
@@ -135,7 +135,7 @@
 
                         <form method="POST" id="signup-form" class="signup-form">
                             {{ csrf_field() }}
-                            <h2 class="form-title" style="text-align: left; font-size: 25px; max-width: 100%; word-wrap: break-word;">Hanya selama Periode Presale<br>Gabung Member mulai Rp 198K + <br>Free 2 Bulan Membership
+                            <h2 class="form-title" style="text-align: left; font-size: 25px; max-width: 100%; word-wrap: break-word;">Hanya selama Periode Presale<br>Gabung Member mulai Rp 225k + <br>All Access Fitnessworks & Unlimited.
                             </h2>
                             <div class="form-group">
                                 <label for="full_name" class="normal" style="font-weight: 600;margin-left: 5px;">Nama
