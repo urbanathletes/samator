@@ -41,6 +41,13 @@
         height: 37px;
     }
 
+    .form-title{
+        text-align: left; 
+        font-size: 25px;
+        max-width: 100%;
+        word-wrap: break-word;
+    }
+
     @media only screen and (max-device-width: 640px) {
         .title-promo {
             font-size: 16px;
@@ -63,9 +70,17 @@
         .ig {
         width: 200px;
         height: 25px;
-    }
+        }
         .spacer-p0{
             margin-bottom: 0;
+        }
+        
+        .form-title{
+            text-align: left; 
+            font-weight: 700;
+            font-size: 16px;
+            word-wrap: break-word;
+            letter-spacing: 1px; 
         }
 
     }
@@ -135,7 +150,7 @@
 
                         <form method="POST" id="signup-form" class="signup-form">
                             {{ csrf_field() }}
-                            <h2 class="form-title" style="text-align: left; font-size: 25px; max-width: 100%; word-wrap: break-word;">Hanya selama Periode Presale<br>Gabung Member mulai Rp 225k + <br>All Access Fitnessworks & Unlimited.
+                            <h2 class="form-title">Hanya selama Periode Presale<br>Gabung Member mulai Rp 225k + <br>All Access Fitnessworks & Unlimited.
                             </h2>
                             <div class="form-group">
                                 <label for="full_name" class="normal" style="font-weight: 600;margin-left: 5px;">Nama
