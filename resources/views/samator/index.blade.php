@@ -43,9 +43,10 @@
 
     .form-title{
         text-align: left; 
-        font-size: 25px;
+        font-size: 22px;
         max-width: 100%;
         word-wrap: break-word;
+        letter-spacing: 1px;
     }
 
     @media only screen and (max-device-width: 640px) {
