@@ -189,7 +189,7 @@
                                 </select> -->
                                 <select class="form-select" id="club_id" name="club_id" data-placeholder="Pilih club" <?= ($withClub ? "disabled" : "readonly") ?>>
                                     <?php foreach ($club as $v) {
-                                        if ($v->id == 17) { ?>
+                                        if ($v->id == 14) { ?>
                                             <option value="<?= $v->id ?>" <?= ($v->is_active == 0 ? "disabled" : "") ?>>
                                                 <?= $v->name ?>
                                                 <?= ($v->is_active == 0 ? "<span style='color:red; font-size:10px;'> (Coming Soon)</span>" : "") ?>
