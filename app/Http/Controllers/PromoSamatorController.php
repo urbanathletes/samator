@@ -59,8 +59,8 @@ class PromoSamatorController extends Controller
         $validateData['createdAt'] = date('Y-m-d H:i:s');
         $validateData['updatedAt'] = date('Y-m-d H:i:s');
 
-        if ($validateData['club_id'] == 17) { //Samator
-            $packageMembershipId = 856;
+        if ($validateData['club_id'] == 14) { //Samator
+            $packageMembershipId = 1021;
 
         }
 
@@ -87,7 +87,7 @@ class PromoSamatorController extends Controller
 
             $foundTransaction = DB::table('ua_orders')
                 ->whereRaw('member_id = ' . $foundMember->id)
-                ->whereRaw('package_membership_id in (856)')
+                ->whereRaw('package_membership_id in (1021)')
                 ->whereRaw('status = "paid"')
                 ->first();
             if (isset($foundTransaction)) {
