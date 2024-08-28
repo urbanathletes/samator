@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdsController;
+use App\Http\Controllers\PromoGrahaController;
 use App\Http\Controllers\SpecialController;
 use App\Http\Controllers\RemoveAccountController;
 use App\Http\Controllers\PromoSamatorController;
@@ -27,3 +28,7 @@ Route::resource('/', PromoSamatorController::class);
 //Samator
 Route::resource('/samator', PromoSamatorController::class);
 Route::post('/order', [PromoSamatorController::class, 'order']);
+
+//Graha
+Route::resource('/graha', PromoGrahaController::class);
+Route::post('/order', [PromoGrahaController::class, 'order']);
