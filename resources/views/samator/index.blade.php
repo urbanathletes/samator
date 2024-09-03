@@ -24,16 +24,19 @@
     }
 
     .jul-one {
-        font-size: 40px;
+        font-size: 36px;
         font-weight: 800;
     }
 
     .spacer {
-        margin-bottom: 150px;
+        margin-bottom: 90px;
     }
 
-    .spacer-p0{
-        margin-bottom: 40px;
+    .spacer-p0 {
+        margin-bottom: 20px;
+    }
+    .spacer-p1 {
+        margin-bottom: 35px;
     }
 
     .ig {
@@ -41,12 +44,20 @@
         height: 37px;
     }
 
-    .form-title{
-        text-align: left; 
-        font-size: 22px;
+    .form-title {
+        text-align: left;
+        font-size: 18.8px;
         max-width: 100%;
         word-wrap: break-word;
         letter-spacing: 1px;
+    }
+
+    .member-benefit {
+        display: flex;
+        justify-content: space-between;
+        color: #ffffff;
+        font-size: 17px;
+        font-weight: 700;
     }
 
     @media only screen and (max-device-width: 640px) {
@@ -61,7 +72,7 @@
         }
 
         .jul-one {
-            font-size: 30px;
+            font-size: 18px;
         }
 
         .spacer {
@@ -69,21 +80,32 @@
         }
 
         .ig {
-        width: 200px;
-        height: 25px;
-        }
-        .spacer-p0{
-            margin-bottom: 0;
-        }
-        
-        .form-title{
-            text-align: left; 
-            font-weight: 700;
-            font-size: 16px;
-            word-wrap: break-word;
-            letter-spacing: 1px; 
+            width: 200px;
+            height: 25px;
         }
 
+        .spacer-p0 {
+            margin-bottom: 0;
+        }
+        .spacer-p1 {
+            margin-bottom: 20px;
+        }
+
+        .form-title {
+            text-align: left;
+            font-weight: 700;
+            font-size: 13px;
+            word-wrap: break-word;
+            letter-spacing: 1px;
+        }
+
+        .member-benefit {
+            display: flex;
+            justify-content: space-between;
+            color: #ffffff;
+            font-size: 12px;
+            font-weight: 700;
+        }
     }
 </style>
 
@@ -96,10 +118,11 @@
                     <img src="assets/img/logo-FW-samator-presale.png" alt="" class="img-logo" style="margin-bottom: 20px; width: 653px; height: 69px; object-fit: contain; filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.5));">
                     <br>
                     <div class="spacer-p0"></div>
-                    <p class="jul-one" style="line-height: 1.2; font-style: italic; ">
+                    <p class="jul-one" style="line-height: 1.2;">
                         <span style="color: #FECC09;font: Poppins; font-weight:bold">
-                            RASAKAN PENGALAMAN <br> NGEGYM MEWAH <br>
-                            DENGAN HARGA YANG RAMAH <br>
+                            Start Your Fitness Journey with <br>
+                            Fitnessworks! Join Now with Special <br>
+                            Presale Prices Starting at 158k/month <br>
                         </span>
                     </p>
                     <br>
@@ -107,7 +130,25 @@
                     <p class="desc-promo" style="font-style: Poppins; font-weight: 700;">
                         FITNESSWORKS adalah GYM pertama yang menerapkan Time Based Membership dari Urban Athletes Management, yang keuntungannya anda yang hanya ngegym 1x seminggu tidak perlu membayar seperti yang ngegym 5x seminggu. Hanya selama
                         <class="form-title" style="text-align: left; font-weight: 700;color: #FECC09; font-style: poppins;">
-                        Periode Presale Gabung Member mulai Rp 225,500  All Access Fitnessworks & Unlimited.
+                            Periode Presale Gabung Member mulai Rp 158.000 All Access Fitnessworks & Unlimited.
+                    </p>
+                    <div class="spacer-p1"></div>
+                    <p>
+                    <div>
+                        <p class="form-title" style="text-align: left; font-weight: 700; color: #FECC09; font-family: Poppins;">
+                            Member Benefit
+                        </p>
+                        <div class="member-benefit">
+                            <ul style="list-style-type: disc;">
+                                <li>Akses Lebih Dari 40+ Kelas</li>
+                                <li>Gratis fasilitas area Gym premium</li>
+                            </ul>
+                            <ul style="list-style-type: disc;">
+                                <li>Gratis konsultasi dengan Personal Trainer</li>
+                                <li>Gratis cek komposisi tubuh (In Body)</li>
+                            </ul>
+                        </div>
+                    </div>
                     </p>
                     <div class="spacer"></div>
                     <div class="ig" style="position: relative;">
@@ -151,7 +192,7 @@
 
                         <form method="POST" id="signup-form" class="signup-form">
                             {{ csrf_field() }}
-                            <h2 class="form-title">Hanya selama Periode Presale<br>Gabung Member mulai Rp 225k + <br>All Access Fitnessworks & Unlimited.
+                            <h2 class="form-title">Hanya untuk 100orang pertama‼️ <br> Dapatkan harga spesial 158k/Bulan <br> Untuk gabung member Di Fitnessworks <br> (Berlaku 7-13 Sept 2024)
                             </h2>
                             <div class="form-group">
                                 <label for="full_name" class="normal" style="font-weight: 600;margin-left: 5px;">Nama
@@ -219,7 +260,7 @@
                             </div>
                             <br>
                             <div class="form-group">
-                                <input type="button" name="benefit" id="benefit" class="button-benefit" value="Member Benefit" />
+                                <!-- <input type="button" name="benefit" id="benefit" class="button-benefit" value="Member Benefit" /> -->
                                 <input type="submit" name="submit" id="real-submit" class="form-submit" value="Daftar Pre-sale" />
                                 <!-- <input type="submit" name="submit" id="real-submit" class="form-submit" style="display:none;" /> -->
                             </div>
