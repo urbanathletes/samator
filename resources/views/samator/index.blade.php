@@ -29,12 +29,13 @@
     }
 
     .spacer {
-        margin-bottom: 90px;
+        margin-bottom: 60px;
     }
 
     .spacer-p0 {
         margin-bottom: 20px;
     }
+
     .spacer-p1 {
         margin-bottom: 35px;
     }
@@ -87,6 +88,7 @@
         .spacer-p0 {
             margin-bottom: 0;
         }
+
         .spacer-p1 {
             margin-bottom: 20px;
         }
@@ -137,16 +139,25 @@
                     <div>
                         <p class="form-title" style="text-align: left; font-weight: 700; color: #FECC09; font-family: Poppins;">
                             Member Benefit
-                        </p>
+                        </p><br>
                         <div class="member-benefit">
-                            <ul style="list-style-type: disc;">
-                                <li>Akses Lebih Dari 40+ Kelas</li>
-                                <li>Gratis fasilitas area Gym premium</li>
+                            <ul style="list-style-type: none; padding-left: 0;">
+                                <li style="background: url('assets/img/cek.png') no-repeat left center; padding-left: 35px;">
+                                    Akses Lebih Dari 40+ Kelas
+                                </li><br>
+                                <li style="background: url('assets/img/cek.png') no-repeat left center; padding-left: 35px;">
+                                    Gratis fasilitas area Gym premium
+                                </li>
                             </ul>
-                            <ul style="list-style-type: disc;">
-                                <li>Gratis konsultasi dengan Personal Trainer</li>
-                                <li>Gratis cek komposisi tubuh (In Body)</li>
+                            <ul style="list-style-type: none; padding-left: 0;">
+                                <li style="background: url('assets/img/cek.png') no-repeat left center; padding-left: 35px;">
+                                    Gratis konsultasi dengan Personal Trainer
+                                </li><br>
+                                <li style="background: url('assets/img/cek.png') no-repeat left center; padding-left: 35px;">
+                                    Gratis cek komposisi tubuh (In Body)
+                                </li>
                             </ul>
+
                         </div>
                     </div>
                     </p>
@@ -192,7 +203,8 @@
 
                         <form method="POST" id="signup-form" class="signup-form">
                             {{ csrf_field() }}
-                            <h2 class="form-title">Hanya untuk 100orang pertama‼️ <br> Dapatkan harga spesial 158k/Bulan <br> Untuk gabung member Di Fitnessworks <br> (Berlaku 7-13 Sept 2024)
+                            <h2 class="form-title">Hanya untuk 100orang pertama<span style="color: #FF0000;">‼️</span>
+                                <br> Dapatkan harga spesial 158k/Bulan <br> Untuk gabung member Di Fitnessworks <br> (Berlaku 7-13 Sept 2024)
                             </h2>
                             <div class="form-group">
                                 <label for="full_name" class="normal" style="font-weight: 600;margin-left: 5px;">Nama
