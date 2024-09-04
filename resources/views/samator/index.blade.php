@@ -446,4 +446,132 @@
         });
     });
 </script>
+@if (session()->has('message'))
+<script>
+    Swal.fire({
+        html: `
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .separator {
+            border: 10;
+            height: 2px;
+            margin: 20px 0;
+            background: #000;
+        }
+
+         .container {
+            width: 721px;
+            height: 563px;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #ffffff;
+        }
+            
+        .container img.logo {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .container img.icon {
+            max-width: 30px;
+            height: auto;
+            margin: 0 10px;
+        }
+
+        .container img.small-icon {
+            max-width: 40px;
+            height: auto;
+            margin: 10px 0;
+        }
+
+        .container h2 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        .container p {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .container .download-icons img {
+            max-width: 100px;
+            height: auto;
+            margin: 10px;
+        }
+
+        .container .download-text {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .container .message {
+            font-size: 16 px;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        @media only screen and (max-device-width: 640px) {
+            .container {
+                width: 100%;
+                height: auto;
+                padding: 10px;
+            }
+
+            .container h2 {
+                font-size: 1.25rem;
+            }
+
+            .container p {
+                font-size: 0.875rem;
+            }
+
+            .container .download-icons img {
+                max-width: 80px;
+            }
+
+            .container .download-text {
+                font-size: 1rem;
+            }
+
+            .container img.small-icon {
+                max-width: 30px;
+            }
+
+            .container .message {
+                font-size: 8px;
+                font-weight: 500;
+            }
+        }
+    </style>
+    <div class="container">
+        <img src="../assets/img/logo.png" alt="FitnessWorks" class="logo">
+        <hr class="separator">
+        <div style="display: flex; align-items: center; justify-content: center;">
+            <h2>CONGRATULATIONS!!</h2>
+        </div>
+        <p class="message">You have booked your spot for 7 days special offer!!<br>We put you spot on hold for 24 hours, our fitness consultant will contact you shortly, or please come <br> to our booth at Graha SA, Jl Raya gubeng No. 19-21, Gubeng, Surabaya to sealed the deal!</p>
+    </div>`,
+        showCloseButton: false,
+        showConfirmButton: false,
+    });
+</script>
+{{ session()->get('message') }}
+@endif
 @endsection

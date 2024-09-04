@@ -131,8 +131,8 @@ class PromoSamatorController extends Controller
                 }
             };*/
         }
-
-        return view('samator.checkout', compact('packageMembership', 'leadsId', 'data', 'salesList'));
+        // return view('samator.checkout', compact('packageMembership', 'leadsId', 'data', 'salesList'));
+        return redirect()->back()->with('message', 'IT WORKS!');
     }
 
     private function getUrl($key = NULL)
