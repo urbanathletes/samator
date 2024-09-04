@@ -19,7 +19,7 @@
 Pre Loader
 --------------------------------------------- 
 */
-
+/* 
         .js-preloader {
             position: fixed;
             top: 0;
@@ -38,13 +38,13 @@ Pre Loader
             z-index: 9999;
             -webkit-transition: opacity 0.25s ease;
             transition: opacity 0.25s ease;
-        }
+        } */
 
-        .js-preloader.loaded {
+        /* .js-preloader.loaded {
             opacity: 0;
             visibility: hidden;
             pointer-events: none;
-        }
+        } */
 
         @-webkit-keyframes dot {
             50% {
@@ -74,14 +74,14 @@ Pre Loader
             }
         }
 
-        .preloader-inner {
+        /* .preloader-inner {
             position: relative;
             width: 142px;
             height: 40px;
             background: #fff;
-        }
+        } */
 
-        .preloader-inner .dot {
+        /* .preloader-inner .dot {
             position: absolute;
             width: 16px;
             height: 16px;
@@ -93,9 +93,9 @@ Pre Loader
             transform: translateX(0);
             -webkit-animation: dot 2.8s infinite;
             animation: dot 2.8s infinite;
-        }
+        } */
 
-        .preloader-inner .dots {
+        /* .preloader-inner .dots {
             -webkit-transform: translateX(0);
             transform: translateX(0);
             margin-top: 12px;
@@ -112,7 +112,7 @@ Pre Loader
             margin-left: 16px;
             background: #1a133f;
             border-radius: 50%;
-        }
+        } */
     </style>
     <!-- Meta Pixel Code -->
     <script>
@@ -142,7 +142,7 @@ Pre Loader
 </head>
 
 <body class="background-2">
-    <div id="js-preloader" class="js-preloader">
+    <!-- <div id="js-preloader" class="js-preloader"> -->
         <div class="preloader-inner">
             <span class="dot"></span>
             <div class="dots">
@@ -151,7 +151,7 @@ Pre Loader
                 <span></span>
             </div>
         </div>
-    </div>
+    <!-- </div> -->
 
     @yield('content')
 
@@ -160,12 +160,12 @@ Pre Loader
     <script src="{{ URL::asset('assets/vendor/jquery-validation/dist/additional-methods.min.js') }}"></script>
     <script src="{{ URL::asset('assets/js/main.js') }}"></script>
     <script src="{{ URL::asset('assets/font-awesome/all.js') }}"></script>
-    <script>
+    <!-- <script>
         // Page loading animation
         $(window).on('load', function() {
             $('#js-preloader').addClass('loaded');
         });
-    </script>
+    </script> -->
 </body>
 
 </html>

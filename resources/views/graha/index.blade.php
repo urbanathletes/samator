@@ -115,7 +115,7 @@
         <div class="container-sm">
             <div class="row">
                 <div class="col-sm-7">
-                    <img src="assets/img/logo-FW-samator-presale.png" alt="" class="img-logo" style="margin-bottom: 20px; width: 653px; height: 69px; object-fit: contain; filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.5));">
+                    <img src="assets/img/logogra.png" alt="" class="img-logo" style="margin-bottom: 20px; width: 653px; height: 69px; object-fit: contain; filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.5));">
                     <br>
                     <div class="spacer-p0"></div>
                     <p class="jul-one" style="line-height: 1.2;">
