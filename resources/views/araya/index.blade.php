@@ -117,7 +117,8 @@
         <div class="container-sm">
             <div class="row">
                 <div class="col-sm-7">
-                    <img src="assets/img/logosamator.png" alt="" class="img-logo" style="margin-bottom: 20px; width: 653px; height: 69px; object-fit: contain; filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.5));">
+                    <!-- <img src="assets/img/logosamator.png" alt="" class="img-logo" style="margin-bottom: 20px; width: 653px; height: 69px; object-fit: contain; filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.5));"> -->
+                    <img src="assets/img/logoaraya.png" alt="" class="img-logo" style="margin-bottom: 20px; width: 653px; height: 69px; object-fit: contain; filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.5));">
                     <br>
                     <div class="spacer-p0"></div>
                     <p class="jul-one" style="line-height: 1.2;">
@@ -204,7 +205,7 @@
                         <form method="POST" id="signup-form" class="signup-form">
                             {{ csrf_field() }}
                             <h2 class="form-title">Hanya untuk 100orang pertama<span style="color: #FF0000;">‼️</span>
-                                <br> Dapatkan harga spesial 158k/Bulan <br> Untuk gabung member Di Fitnessworks <br> (Berlaku 7-13 Sept 2024)
+                                <br> Dapatkan harga spesial 158k/Bulan <br> Untuk gabung member Di Fitnessworks <br> (Berlaku 14 - 21 Oktober 2024)
                             </h2>
                             <div class="form-group">
                                 <label for="full_name" class="normal" style="font-weight: 600;margin-left: 5px;">Nama
@@ -242,7 +243,7 @@
                                 </select> -->
                                 <select class="form-select" id="club_id" name="club_id" data-placeholder="Pilih club" <?= ($withClub ? "disabled" : "readonly") ?>>
                                     <?php foreach ($club as $v) {
-                                        if ($v->id == 14) { ?>
+                                        if ($v->id == 17) { ?>
                                             <option value="<?= $v->id ?>" <?= ($v->is_active == 0 ? "disabled" : "") ?>>
                                                 <?= $v->name ?>
                                                 <?= ($v->is_active == 0 ? "<span style='color:red; font-size:10px;'> (Coming Soon)</span>" : "") ?>

@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdsController;
 use App\Http\Controllers\GuestController;
+use App\Http\Controllers\PromoArayaController;
 use App\Http\Controllers\PromoGrahaController;
 use App\Http\Controllers\SpecialController;
 use App\Http\Controllers\RemoveAccountController;
@@ -22,3 +23,7 @@ Route::post('/order', [PromoSamatorController::class, 'order']);
 //Graha
 Route::resource('/graha-sa', PromoGrahaController::class);
 Route::post('/order', [PromoGrahaController::class, 'order']);
+
+//Araya
+Route::resource('/araya', PromoArayaController::class);
+Route::post('/order', [PromoArayaController::class, 'order']);
