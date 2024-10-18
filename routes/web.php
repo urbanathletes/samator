@@ -8,6 +8,7 @@ use App\Http\Controllers\PromoGrahaController;
 use App\Http\Controllers\SpecialController;
 use App\Http\Controllers\RemoveAccountController;
 use App\Http\Controllers\PromoSamatorController;
+use App\Http\Controllers\PromoTarakanController;
 use App\Http\Controllers\RefferalController;
 
 // Route::resource('/', AdsController::class);
@@ -27,3 +28,7 @@ Route::post('/order', [PromoGrahaController::class, 'order']);
 //Araya
 Route::resource('/araya', PromoArayaController::class);
 Route::post('/order', [PromoArayaController::class, 'order']);
+
+//Tarakan
+Route::resource('/tarakan', PromoTarakanController::class);
+Route::post('/order', [PromoTarakanController::class, 'order']);
